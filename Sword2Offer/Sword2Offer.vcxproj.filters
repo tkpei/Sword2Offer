@@ -5,10 +5,16 @@
     <ClCompile Include="common\log.cpp">
       <Filter>common</Filter>
     </ClCompile>
+    <ClCompile Include="1_array_find.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
       <UniqueIdentifier>{61ff88e6-edfd-4cf6-902b-653e7d77e5b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sword2Offer">
+      <UniqueIdentifier>{a73d3483-ceb5-4baa-ab45-0b03636e2e7e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
