@@ -9,7 +9,8 @@ int main(int argc, char **argv)
 
     printf("Running main() from main\n");
     testing::InitGoogleTest(&argc, argv);
-    testing::GTEST_FLAG(filter) = "ArrayFindTest.*";
+    //testing::GTEST_FLAG(filter) = "ArrayFindTest.*";
+    testing::GTEST_FLAG(filter) = "FrogJumpTest.*";
 
     RUN_ALL_TESTS();
     return 0;

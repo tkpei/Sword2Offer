@@ -5,7 +5,8 @@
 
 using std::vector;
 
-bool Find(int target, vector<vector<int> > array) {
+bool Find(int target, vector<vector<int> > array)
+{
     if (array.size() == 0 || array[0].size() == 0)
     {
         return false;
@@ -36,7 +37,8 @@ bool Find(int target, vector<vector<int> > array) {
     return false;
 }
 
-TEST(ArrayFindTest, ArrayFind) {
+TEST(ArrayFindTest, ArrayFind)
+{
     vector<vector<int> > array = { {1, 2, 8, 9},{2, 4, 9, 12},{4, 7, 10, 13},{6, 8, 11, 15} };
     EXPECT_FALSE(Find(50, array));
     EXPECT_FALSE(Find(5, array));
@@ -48,7 +50,8 @@ TEST(ArrayFindTest, ArrayFind) {
     EXPECT_TRUE(Find(2, array));
 }
 
-TEST(ArrayFindTest, ArrayFindOneRow) {
+TEST(ArrayFindTest, ArrayFindOneRow)
+{
     vector<vector<int> > array = { { 1, 2, 8, 9 } };
     EXPECT_FALSE(Find(-1, array));
     EXPECT_FALSE(Find(15, array));
@@ -56,7 +59,8 @@ TEST(ArrayFindTest, ArrayFindOneRow) {
     EXPECT_TRUE(Find(2, array));
 }
 
-TEST(ArrayFindTest, ArrayFindOneCol) {
+TEST(ArrayFindTest, ArrayFindOneCol)
+{
     vector<vector<int> > array = { { 1}, {2}, {8}, {9} };
     EXPECT_FALSE(Find(-1, array));
     EXPECT_FALSE(Find(15, array));

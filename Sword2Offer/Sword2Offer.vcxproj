@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
     <ClCompile Include="common\log.cpp" />
     <ClCompile Include="main.cpp" />
