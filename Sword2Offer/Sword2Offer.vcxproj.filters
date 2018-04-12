@@ -14,6 +14,9 @@
     <ClCompile Include="19_circul_vecrot.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="2_replace_space.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
