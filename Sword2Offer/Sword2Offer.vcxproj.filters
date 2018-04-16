@@ -11,10 +11,13 @@
     <ClCompile Include="8_frog_jump.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
-    <ClCompile Include="19_circul_vecrot.cpp">
+    <ClCompile Include="2_replace_space.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
-    <ClCompile Include="2_replace_space.cpp">
+    <ClCompile Include="19_circul_vector.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="18_binary_tree_mirror.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
   </ItemGroup>
