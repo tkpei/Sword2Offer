@@ -157,6 +157,7 @@
     <ClCompile Include="2_replace_space.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
+    <ClCompile Include="binary_tree.cpp" />
     <ClCompile Include="common\log.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
