@@ -3,15 +3,8 @@
 
 #include "gtest/gtest.h"
 
-struct TreeNode
-{
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-    TreeNode(int x, TreeNode *leftNode, TreeNode *rightNode) :
-        val(x), left(leftNode), right(rightNode) {}
-};
+#include "binary_tree.h"
+
 
 /* 二叉树的非递归中序遍历 */
 std::string InOrderTravelsal(TreeNode* pRoot)

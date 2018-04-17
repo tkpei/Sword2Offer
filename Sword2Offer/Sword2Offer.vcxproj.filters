@@ -23,6 +23,7 @@
     <ClCompile Include="binary_tree.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="4_rebuild_binary_tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
@@ -35,6 +36,9 @@
   <ItemGroup>
     <ClInclude Include="common\log.h">
       <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="binary_tree.h">
+      <Filter>Sword2Offer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
