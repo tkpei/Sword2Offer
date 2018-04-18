@@ -23,7 +23,12 @@
     <ClCompile Include="binary_tree.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
-    <ClCompile Include="4_rebuild_binary_tree.cpp" />
+    <ClCompile Include="22_print_from_top_2_bottom.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="4_rebuild_binary_tree.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">

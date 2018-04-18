@@ -154,6 +154,7 @@
   <ItemGroup>
     <ClCompile Include="18_binary_tree_mirror.cpp" />
     <ClCompile Include="19_circul_vector.cpp" />
+    <ClCompile Include="22_print_from_top_2_bottom.cpp" />
     <ClCompile Include="2_replace_space.cpp" />
     <ClCompile Include="4_rebuild_binary_tree.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
