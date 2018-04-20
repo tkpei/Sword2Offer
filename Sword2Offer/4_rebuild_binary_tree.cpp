@@ -3,7 +3,7 @@
 #include "gtest/gtest.h"
 
 #include "common/log.h"
-#include "binary_tree.h"
+#include "container/binary_tree.h"
 
 using std::vector;
 

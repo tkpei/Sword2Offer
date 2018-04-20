@@ -159,13 +159,13 @@
     <ClCompile Include="4_rebuild_binary_tree.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
-    <ClCompile Include="binary_tree.cpp" />
     <ClCompile Include="common\log.cpp" />
+    <ClCompile Include="container\binary_tree.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="binary_tree.h" />
     <ClInclude Include="common\log.h" />
+    <ClInclude Include="container\binary_tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
