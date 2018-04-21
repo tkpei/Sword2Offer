@@ -35,6 +35,9 @@
     <ClCompile Include="24_binary_tree_path_sum.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="38_depth_of_binary_tree.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">

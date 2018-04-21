@@ -157,6 +157,7 @@
     <ClCompile Include="22_print_from_top_2_bottom.cpp" />
     <ClCompile Include="24_binary_tree_path_sum.cpp" />
     <ClCompile Include="2_replace_space.cpp" />
+    <ClCompile Include="38_depth_of_binary_tree.cpp" />
     <ClCompile Include="4_rebuild_binary_tree.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />

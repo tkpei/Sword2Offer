@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 #include "gtest/gtest.h"
 #include "common/log.h"
