@@ -19,22 +19,30 @@ class BinaryTree
 public:
     static const int nonode = INT_MAX;
 
-    BinaryTree() : pRoot(NULL) {};
+    BinaryTree() : pRoot_(NULL) {};
+
+    BinaryTree(TreeNode* pRoot) : pRoot_(pRoot) {};
 
     BinaryTree(std::initializer_list<int> list);
 
     BinaryTree(const BinaryTree& other);
 
-    BinaryTree& operator= (const BinaryTree& other);
-
     ~BinaryTree();
+
+    BinaryTree& operator= (const BinaryTree& other);
 
     bool operator==(const BinaryTree& tree) const;
 
-    TreeNode* getRoot() const { return pRoot; }
+    bool operator!=(const BinaryTree& tree) const;
+
+    std::string InOrderTravelsal();
+
+    TreeNode* getRoot() const { return pRoot_; }
+
+    TreeNode* getRoot() { return pRoot_; }
 
 private:
-    TreeNode* pRoot;
+    TreeNode* pRoot_;
 };
 
 #endif // __BINARY_TREE__

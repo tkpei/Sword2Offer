@@ -29,6 +29,9 @@
     <ClCompile Include="container\binary_tree.cpp">
       <Filter>container</Filter>
     </ClCompile>
+    <ClCompile Include="container\test_binary_tree.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">

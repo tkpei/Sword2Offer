@@ -6,7 +6,7 @@
 
 #include "binary_tree.h"
 
-BinaryTree::BinaryTree(std::initializer_list<int> list) : pRoot(NULL)
+BinaryTree::BinaryTree(std::initializer_list<int> list) : pRoot_(NULL)
 {
     if (list.size() <= 0 && *list.begin() != nonode)
         return;
@@ -14,7 +14,7 @@ BinaryTree::BinaryTree(std::initializer_list<int> list) : pRoot(NULL)
     std::queue<TreeNode** > treeNodeQueue;
     auto it = list.begin();
 
-    treeNodeQueue.push(&pRoot);
+    treeNodeQueue.push(&pRoot_);
 
     while (it != list.end())
     {
@@ -28,7 +28,6 @@ BinaryTree::BinaryTree(std::initializer_list<int> list) : pRoot(NULL)
         }
         else
         {
-            (*temp) = NULL;
             treeNodeQueue.push(NULL);
             treeNodeQueue.push(NULL);
         }
@@ -39,11 +38,11 @@ BinaryTree::BinaryTree(std::initializer_list<int> list) : pRoot(NULL)
 
 BinaryTree::~BinaryTree()
 {
-    if (pRoot == NULL)
+    if (pRoot_ == NULL)
         return;
 
     std::queue<TreeNode*> treeNodeQueue;
-    treeNodeQueue.push(pRoot);
+    treeNodeQueue.push(pRoot_);
     while (treeNodeQueue.size() > 0)
     {
         TreeNode * temp = treeNodeQueue.front();
@@ -63,7 +62,7 @@ bool BinaryTree::operator==(const BinaryTree& tree) const
     std::queue<TreeNode*> treeNodeQueue0;
     std::queue<TreeNode*> treeNodeQueue1;
 
-    treeNodeQueue0.push(pRoot);
+    treeNodeQueue0.push(pRoot_);
     treeNodeQueue1.push(pRootOther);
 
     while (treeNodeQueue0.size() > 0)
@@ -99,37 +98,16 @@ bool BinaryTree::operator==(const BinaryTree& tree) const
     return true;
 }
 
-TEST(BinaryTreeTest, InitBinaryTree)
+bool BinaryTree::operator!=(const BinaryTree & tree) const
 {
-    TreeNode* pRoot;
-    BinaryTree binaryTree = {8, 10, 6, 11, 9, BinaryTree::nonode, 5};
-    pRoot = binaryTree.getRoot();
-
-    EXPECT_EQ(pRoot->val, 8);
-    EXPECT_EQ(pRoot->left->val, 10);
-    EXPECT_EQ(pRoot->right->val, 6);
-    EXPECT_EQ(pRoot->left->left->val, 11);
-    EXPECT_EQ(pRoot->left->right->val, 9);
-    EXPECT_FALSE(pRoot->right->left);
-    EXPECT_EQ(pRoot->right->right->val, 5);
+    return !(this->operator==(tree));
 }
 
-TEST(BinaryTreeTest, OperatorEqual)
-{
-    BinaryTree binaryTree0 = { 8, 10, 6, 11, 9, BinaryTree::nonode, 5 };
-    BinaryTree binaryTree1 = { 8, 10, 6, 11, 9, BinaryTree::nonode, 5 };
-    //BinaryTree binaryTree2 = { 8, 10, 6, 11, 9, BinaryTree::nonode, 5, 6 };
-    //BinaryTree binaryTree3;
-
-    EXPECT_EQ(binaryTree0, binaryTree1);
-}
-
-/* 二叉树的非递归中序遍历 */
-std::string InOrderTravelsal(TreeNode* pRoot)
+std::string BinaryTree::InOrderTravelsal()
 {
     std::string result = "";
     std::stack<TreeNode* > treeNodeStack;
-    TreeNode* cur = pRoot;
+    TreeNode* cur = this->getRoot();
 
     while (cur || treeNodeStack.size() > 0)
     {
@@ -147,41 +125,4 @@ std::string InOrderTravelsal(TreeNode* pRoot)
         }
     }
     return result;
-}
-
-TEST(BinaryTreeTest, Normal)
-{
-    TreeNode *node5 = new TreeNode(5);
-    TreeNode *node9 = new TreeNode(9);
-    TreeNode *node11 = new TreeNode(11);
-    TreeNode *node6 = new TreeNode(6, node5, NULL);
-    TreeNode *node10 = new TreeNode(10, node9, node11);
-    TreeNode *node8 = new TreeNode(8, node6, node10);
-    std::string result = InOrderTravelsal(node8);
-    EXPECT_EQ(result, "5 6 8 9 10 11 ");
-}
-
-TEST(BinaryTreeTest, NULLNode)
-{
-    TreeNode *node = NULL;
-
-    std::string result = InOrderTravelsal(node);
-    EXPECT_EQ(result, "");
-}
-
-TEST(BinaryTreeTest, OneNode)
-{
-    TreeNode *node = new TreeNode(5);
-
-    std::string result = InOrderTravelsal(node);
-    EXPECT_EQ(result, "5 ");
-}
-
-TEST(BinaryTreeTest, TwoNode)
-{
-    TreeNode *node5 = new TreeNode(5);
-    TreeNode *node9 = new TreeNode(9, node5, NULL);
-
-    std::string result = InOrderTravelsal(node9);
-    EXPECT_EQ(result, "5 9 ");
 }

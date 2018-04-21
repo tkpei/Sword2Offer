@@ -161,6 +161,7 @@
     <ClCompile Include="1_array_find.cpp" />
     <ClCompile Include="common\log.cpp" />
     <ClCompile Include="container\binary_tree.cpp" />
+    <ClCompile Include="container\test_binary_tree.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

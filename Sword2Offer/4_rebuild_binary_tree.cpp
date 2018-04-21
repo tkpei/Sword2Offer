@@ -64,19 +64,10 @@ TEST(reConstructBinaryTreeTest, Normal)
     vector<int> vin = {4, 7, 2, 1, 5, 3, 8, 6};
     TreeNode* pRoot = reConstructBinaryTree(pre, vin);
 
-    EXPECT_EQ(pRoot->val, 1);
-    EXPECT_EQ(pRoot->left->val, 2);
-    EXPECT_EQ(pRoot->right->val, 3);
-    EXPECT_EQ(pRoot->left->left->val, 4);
-    EXPECT_FALSE(pRoot->left->right);
-    EXPECT_EQ(pRoot->right->left->val, 5);
-    EXPECT_EQ(pRoot->right->right->val, 6);
-    EXPECT_FALSE(pRoot->left->left->left);
-    EXPECT_EQ(pRoot->left->left->right->val, 7);
-    EXPECT_FALSE(pRoot->right->left->right);
-    EXPECT_FALSE(pRoot->right->left->left);
-    EXPECT_FALSE(pRoot->right->right->right);
-    EXPECT_EQ(pRoot->right->right->left->val, 8);
+    BinaryTree expectResult = { 1, 2, 3, 4, BinaryTree::nonode, 5, 6, BinaryTree::nonode, 7,
+        BinaryTree::nonode, BinaryTree::nonode, BinaryTree::nonode, BinaryTree::nonode, 8 };
+
+    EXPECT_EQ(BinaryTree(pRoot), expectResult);
 }
 
 TEST(reConstructBinaryTreeTest, NullNode) {}

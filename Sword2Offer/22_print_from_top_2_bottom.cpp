@@ -3,15 +3,7 @@
 
 #include "gtest/gtest.h"
 
-struct TreeNode
-{
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-    TreeNode(int x, TreeNode *leftNode, TreeNode *rightNode) :
-        val(x), left(leftNode), right(rightNode) {}
-};
+#include "container/binary_tree.h"
 
 std::vector<int> PrintFromTopToBottom(TreeNode* root)
 {
@@ -36,15 +28,12 @@ std::vector<int> PrintFromTopToBottom(TreeNode* root)
 
 TEST(PrintFromTopToBottomTest, Normal)
 {
-    std::vector<int> result;
+    BinaryTree tree = { 8, 6, 10, 5, BinaryTree::nonode, 9, 11 };
     std::vector<int> resultExpect = {8, 6, 10, 5, 9, 11};
-    TreeNode *node5 = new TreeNode(5);
-    TreeNode *node9 = new TreeNode(9);
-    TreeNode *node11 = new TreeNode(11);
-    TreeNode *node6 = new TreeNode(6, node5, NULL);
-    TreeNode *node10 = new TreeNode(10, node9, node11);
-    TreeNode *node8 = new TreeNode(8, node6, node10);
-    result = PrintFromTopToBottom(node8);
+    std::vector<int> result;
+
+    result = PrintFromTopToBottom(tree.getRoot());
+
     EXPECT_EQ(result, resultExpect);
 }
 
