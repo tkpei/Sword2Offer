@@ -32,6 +32,9 @@
     <ClCompile Include="container\test_binary_tree.cpp">
       <Filter>container</Filter>
     </ClCompile>
+    <ClCompile Include="24_binary_tree_path_sum.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
