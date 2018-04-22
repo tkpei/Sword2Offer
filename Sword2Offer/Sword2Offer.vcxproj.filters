@@ -38,6 +38,12 @@
     <ClCompile Include="38_depth_of_binary_tree.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="container\avl_tree.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\test_avl_tree.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
@@ -55,6 +61,9 @@
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="container\binary_tree.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\avl_tree.h">
       <Filter>container</Filter>
     </ClInclude>
   </ItemGroup>
