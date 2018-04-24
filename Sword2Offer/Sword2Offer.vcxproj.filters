@@ -45,6 +45,7 @@
       <Filter>container</Filter>
     </ClCompile>
     <ClCompile Include="23_is_binary_search_tree.cpp" />
+    <ClCompile Include="39_is_avl_tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
