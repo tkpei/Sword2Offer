@@ -46,6 +46,12 @@
     </ClCompile>
     <ClCompile Include="23_is_binary_search_tree.cpp" />
     <ClCompile Include="39_is_avl_tree.cpp" />
+    <ClCompile Include="algorithm\sort.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\test_sort.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
@@ -57,6 +63,9 @@
     <Filter Include="container">
       <UniqueIdentifier>{1d4d4398-6506-4349-9fd2-00d3c6d20563}</UniqueIdentifier>
     </Filter>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{df9eff3b-1ffb-4cae-9a6c-dcaca25dbd69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\log.h">
@@ -67,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="container\avl_tree.h">
       <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\sort.h">
+      <Filter>algorithm</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
