@@ -43,3 +43,21 @@ void quickSort(std::vector<int>& data)
 
     qSort(data, 0, static_cast<int>(data.size() - 1));
 }
+
+void simpleSelectionSort(std::vector<int>& data)
+{
+    if (data.size() <= 1)
+        return;
+
+    for (int i = 0; i < data.size() - 1; i++)   /* 遍历到倒数第二个 */
+    {
+        int minIndex = i;
+        for (int j = i + 1; j < data.size(); j++)
+        {
+            if (data[j] < data[minIndex])
+                minIndex = j;
+        }
+        swap(data[i], data[minIndex]);
+    }
+    return;
+}
