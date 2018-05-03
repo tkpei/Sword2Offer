@@ -44,13 +44,23 @@
     <ClCompile Include="container\test_avl_tree.cpp">
       <Filter>container</Filter>
     </ClCompile>
-    <ClCompile Include="23_is_binary_search_tree.cpp" />
-    <ClCompile Include="39_is_avl_tree.cpp" />
     <ClCompile Include="algorithm\sort.cpp">
       <Filter>algorithm</Filter>
     </ClCompile>
     <ClCompile Include="algorithm\test_sort.cpp">
       <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\search.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\test_search.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="23_is_binary_search_tree.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="39_is_avl_tree.cpp">
+      <Filter>Sword2Offer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +88,9 @@
       <Filter>container</Filter>
     </ClInclude>
     <ClInclude Include="algorithm\sort.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm\search.h">
       <Filter>algorithm</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,5 @@
-#ifndef __BINARY_TREE__
-#define __BINARY_TREE__
+#ifndef __CONTAINER_BINARY_TREE__
+#define __CONTAINER_BINARY_TREE__
 
 #include <climits>
 #include <initializer_list>
@@ -45,4 +45,4 @@ private:
     TreeNode* pRoot_;
 };
 
-#endif // __BINARY_TREE__
+#endif // __CONTAINER_BINARY_TREE__

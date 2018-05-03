@@ -163,7 +163,9 @@
     <ClCompile Include="4_rebuild_binary_tree.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
+    <ClCompile Include="algorithm\search.cpp" />
     <ClCompile Include="algorithm\sort.cpp" />
+    <ClCompile Include="algorithm\test_search.cpp" />
     <ClCompile Include="algorithm\test_sort.cpp" />
     <ClCompile Include="common\log.cpp" />
     <ClCompile Include="container\avl_tree.cpp" />
@@ -173,6 +175,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algorithm\search.h" />
     <ClInclude Include="algorithm\sort.h" />
     <ClInclude Include="common\log.h" />
     <ClInclude Include="container\avl_tree.h" />

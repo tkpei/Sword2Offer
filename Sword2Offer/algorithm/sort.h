@@ -1,8 +1,8 @@
-#ifndef __ALGORITHM_SORT__
-#define __ALGORITHM_SORT__
+#ifndef __ALGORITHM_SORT_H__
+#define __ALGORITHM_SORT_H__
 
 #include <vector>
 
 void quickSort(std::vector<int>& data);
 
-#endif//__ALGORITHM_SORT__
+#endif//__ALGORITHM_SORT_H__

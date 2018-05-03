@@ -1,5 +1,5 @@
-#ifndef __AVL_TREE__
-#define __AVL_TREE__
+#ifndef __CONTAINER_AVL_TREE_H__
+#define __CONTAINER_AVL_TREE_H__
 
 #include <climits>
 #include <initializer_list>
@@ -49,4 +49,4 @@ private:
     AVLNode* root_;
 };
 
-#endif // __AVL_TREE__
+#endif // __CONTAINER_AVL_TREE_H__
