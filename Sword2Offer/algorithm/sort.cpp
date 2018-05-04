@@ -61,3 +61,40 @@ void simpleSelectionSort(std::vector<int>& data)
     }
     return;
 }
+
+void insertionSort(std::vector<int>& data)
+{
+    if (data.size() <= 1)
+        return;
+
+    for (int i = 1; i < data.size(); i++)
+    {
+        int j;
+        int temp = data[i];
+        for (j = i; j > 0 && data[j - 1] > temp; j--)
+        {
+            data[j] = data[j - 1];
+        }
+        data[j] = temp;
+    }
+}
+
+void bubbleSort(std::vector<int>& data)
+{
+    if (data.size() <= 1)
+        return;
+
+    for (int i = static_cast<int>(data.size()) - 1; i > 0; i--)
+    {
+        int flag = false;
+        for (int j = 0; j < i; j++)
+        {
+            if (data[j] > data[j + 1])
+            {
+                swap(data[j], data[j + 1]);
+                flag = true;
+            }
+        }
+        if (flag == false) break;
+    }
+}

@@ -7,4 +7,8 @@ void quickSort(std::vector<int>& data);
 
 void simpleSelectionSort(std::vector<int>& data);
 
+void insertionSort(std::vector<int>& data);
+
+void bubbleSort(std::vector<int>& data);
+
 #endif//__ALGORITHM_SORT_H__
