@@ -152,8 +152,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="12_pow_integer.cpp" />
     <ClCompile Include="18_binary_tree_mirror.cpp" />
     <ClCompile Include="19_circul_vector.cpp" />
+    <ClCompile Include="20_min_stack.cpp" />
     <ClCompile Include="22_print_from_top_2_bottom.cpp" />
     <ClCompile Include="23_is_binary_search_tree.cpp" />
     <ClCompile Include="24_binary_tree_path_sum.cpp" />
@@ -161,6 +163,7 @@
     <ClCompile Include="38_depth_of_binary_tree.cpp" />
     <ClCompile Include="39_is_avl_tree.cpp" />
     <ClCompile Include="4_rebuild_binary_tree.cpp" />
+    <ClCompile Include="5_min_number_in_rotation_array.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
     <ClCompile Include="algorithm\search.cpp" />
