@@ -71,6 +71,12 @@
     <ClCompile Include="12_pow_integer.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="10_rect_cover.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="9_frog_jump_1.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">

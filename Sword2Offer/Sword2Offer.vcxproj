@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10_rect_cover.cpp" />
     <ClCompile Include="12_pow_integer.cpp" />
     <ClCompile Include="18_binary_tree_mirror.cpp" />
     <ClCompile Include="19_circul_vector.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="5_min_number_in_rotation_array.cpp" />
     <ClCompile Include="8_frog_jump.cpp" />
     <ClCompile Include="1_array_find.cpp" />
+    <ClCompile Include="9_frog_jump_1.cpp" />
     <ClCompile Include="algorithm\search.cpp" />
     <ClCompile Include="algorithm\sort.cpp" />
     <ClCompile Include="algorithm\test_search.cpp" />
