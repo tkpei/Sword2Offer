@@ -83,6 +83,9 @@
     <ClCompile Include="25_list_clone.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="106_entry_node_of_loop.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">

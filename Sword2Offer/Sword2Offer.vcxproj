@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="106_entry_node_of_loop.cpp" />
     <ClCompile Include="10_rect_cover.cpp" />
     <ClCompile Include="12_pow_integer.cpp" />
     <ClCompile Include="18_binary_tree_mirror.cpp" />
