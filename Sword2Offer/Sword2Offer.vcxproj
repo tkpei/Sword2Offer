@@ -152,7 +152,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="105_first_appearing_once.cpp" />
     <ClCompile Include="106_entry_node_of_loop.cpp" />
+    <ClCompile Include="108_binary_tree_next_node.cpp" />
     <ClCompile Include="10_rect_cover.cpp" />
     <ClCompile Include="12_pow_integer.cpp" />
     <ClCompile Include="18_binary_tree_mirror.cpp" />

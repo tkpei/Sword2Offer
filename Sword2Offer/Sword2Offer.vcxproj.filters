@@ -86,6 +86,12 @@
     <ClCompile Include="106_entry_node_of_loop.cpp">
       <Filter>Sword2Offer</Filter>
     </ClCompile>
+    <ClCompile Include="108_binary_tree_next_node.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="105_first_appearing_once.cpp">
+      <Filter>Sword2Offer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="common">
